@@ -22,12 +22,19 @@
     refreshFooter.arrowView.image = nil;
     
     [refreshFooter setTitle:@"下拉去往项目信息" forState:MJRefreshStateIdle];
+
     [refreshFooter setTitle:@"释放到达项目信息" forState:MJRefreshStatePulling];
+    
     [refreshFooter setTitle:@"释放到达项目信息" forState:MJRefreshStateRefreshing];
+    
     [refreshFooter setTitle:@"释放到达项目信息" forState:MJRefreshStateWillRefresh];
+    
     [refreshFooter setTitle:@"下拉去往项目信息" forState:MJRefreshStateNoMoreData];
+    
     // 隐藏状态
+    
     //    refreshFooter.stateLabel.hidden = YES;
+    
     self.subTableView.mj_footer = refreshFooter;
     
 }
@@ -40,11 +47,17 @@
         [weakSelf.webView.scrollView.mj_header endRefreshing];
     }];
     refreshHeader.lastUpdatedTimeLabel.hidden = YES;
+
     [refreshHeader setTitle:@"下拉回到项目详情" forState:MJRefreshStateIdle];
+    
     [refreshHeader setTitle:@"释放回到项目详情" forState:MJRefreshStatePulling];
+    
     [refreshHeader setTitle:@"释放回到项目详情" forState:MJRefreshStateRefreshing];
+    
     [refreshHeader setTitle:@"释放回到项目详情" forState:MJRefreshStateWillRefresh];
+    
     [refreshHeader setTitle:@"下拉回到项目详情" forState:MJRefreshStateNoMoreData];
     
     self.webView.scrollView.mj_header = refreshHeader;
 }
+
