@@ -1,6 +1,6 @@
 # DropdownLoadOnTheNextPage
 类似于淘宝,京东的上拉加载图文详情.下拉返回商品详情.使用MJRefresh.代码简单实用
-
+![image](https://github.com/wjmwjmwb/GitImage/blob/master/%E4%B8%8B%E6%8B%89%E4%B8%8A%E6%8B%89%E5%88%86%E9%A1%B5.gif)
 #pragma mark - viewDidLoad
     [self.view addSubview:self.bgScrollView];
     [self.bgScrollView addSubview:self.subTableView];
